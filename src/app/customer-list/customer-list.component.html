@@ -1,5 +1,21 @@
-<h2>customer List</h2>
-
-<div *ngFor="let customer of customers">
-  {{customer.name}}
+<div class="row">
+  <div class="col-xs-12">
+    <h2>customer List</h2>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <div *ngFor="let customer of customers">
+      {{customer.name}} =>
+      <span>
+        <a [routerLink]="['/customer-edit', customer.id]">{{customer.name}}</a>
+      </span>
+    </div>
+    <hr>
+    <button class="btn btn-primary" 
+            [routerLink]="['/customer-add']">
+      Add
+    </button>
+  </div>
 </div>

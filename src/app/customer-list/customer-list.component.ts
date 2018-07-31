@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Response } from '@angular/http';
 
 import { CustomerService } from '../shared/customer/customer.service';
 import { Customer } from '../shared/customer/customer.model';
