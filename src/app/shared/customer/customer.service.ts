@@ -4,11 +4,11 @@ import { Http } from '@angular/http';
 @Injectable({
   providedIn: 'root'
 })
-export class CarService {
+export class CustomerService {
 
   constructor(private http: Http) { }
   
-  getCars(){
+  getCustomers(){
     return this.http
     .get('http://localhost:8088/rest/customers/all');
   }

@@ -4,19 +4,19 @@ import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import { CarService } from './shared/car/car.service';
-import { CarListComponent } from './car-list/car-list.component';
+import { CustomerService } from './shared/customer/customer.service';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarListComponent
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
     HttpModule
   ],
-  providers: [CarService],
+  providers: [CustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
