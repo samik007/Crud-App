@@ -10,14 +10,18 @@ import { Customer } from '../shared/customer/customer.model';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
+  dtOptions: DataTables.Settings = {};
   customers: Customer[];
 
   constructor(private customerService: CustomerService) { }
 
   ngOnInit() {
+    this.dtOptions = {
+      pagingType: 'full_numbers'
+    };
     this.customerService.getCustomers().subscribe(data => {
       this.customers = data.json();
-    })
+    });
   }
 
 }
