@@ -14,7 +14,7 @@ const appRoutes: Routes = [
     {path: 'customer-edit/:id', component: CustomerEditComponent },
     {path: 'customer-department', component: CustomerDepartmentComponent },
 ]
-
+        
 @NgModule({
     imports: [RouterModule.forRoot(appRoutes)],
     exports: [RouterModule]
