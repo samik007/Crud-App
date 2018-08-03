@@ -24,5 +24,5 @@ export class CustomerListComponent implements OnInit {
       this.customers = data.json();
     });
   }
-
+  // Testing for GIT checkin
 }
