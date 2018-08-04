@@ -10,13 +10,15 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
+import { CustomerDepartmentComponent } from './customer-department/customer-department.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerListComponent,
     CustomerEditComponent,
-    CustomerDataComponent
+    CustomerDataComponent,
+    CustomerDepartmentComponent
   ],
   imports: [
     BrowserModule,

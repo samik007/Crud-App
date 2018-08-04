@@ -16,6 +16,7 @@ export class CustomerListComponent implements OnInit {
   constructor(private customerService: CustomerService) { }
 
   ngOnInit() {
+    this.customers = []; // Home page Data table Fix --> No data issue
     this.dtOptions = {
       pagingType: 'full_numbers'
     };
@@ -23,5 +24,5 @@ export class CustomerListComponent implements OnInit {
       this.customers = data.json();
     });
   }
-
+  // Testing for GIT checkin
 }
