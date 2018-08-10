@@ -11,6 +11,7 @@ import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
 import { CustomerDepartmentComponent } from './customer-department/customer-department.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CustomerDepartmentComponent } from './customer-department/customer-depa
     CustomerListComponent,
     CustomerEditComponent,
     CustomerDataComponent,
-    CustomerDepartmentComponent
+    CustomerDepartmentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

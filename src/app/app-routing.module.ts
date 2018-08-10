@@ -5,6 +5,7 @@ import { CustomerEditComponent } from './customer-edit/customer-edit.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerDataComponent } from './customer-data/customer-data.component';
 import { CustomerDepartmentComponent } from './customer-department/customer-department.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
     {path: '', redirectTo: '/customer-list', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
     {path: 'customer-add', component: CustomerEditComponent },
     {path: 'customer-edit/:id', component: CustomerEditComponent },
     {path: 'customer-department', component: CustomerDepartmentComponent },
+    { path: 'login', component: LoginComponent}
 ]
         
 @NgModule({
